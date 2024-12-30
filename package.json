@@ -1,0 +1,33 @@
+{
+  "name": "nodejs-api-template",
+  "version": "1.0.0",
+  "description": "This system serves as a modular base for various web applications that require user registration, authentication, password management, email notifications, and image uploads. It is ideal for platforms such as e-commerce sites, social media applications, and online services.",
+  "main": "src/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sandamele/nodejs-api-template.git"
+  },
+  "keywords": [
+    "nodejs",
+    "api",
+    "api",
+    "template",
+    "api",
+    "boilerplate",
+    "nodejs",
+    "api",
+    "boilerplate",
+    "nodejs",
+    "api",
+    "template"
+  ],
+  "author": "Keith Sandamele",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sandamele/nodejs-api-template/issues"
+  },
+  "homepage": "https://github.com/Sandamele/nodejs-api-template#readme"
+}
