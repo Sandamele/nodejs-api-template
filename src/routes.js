@@ -1,8 +1,10 @@
 const routers = require("express")();
 const usersV1Routes = require("./api/users/users.routes");
-const authorization = require("./middleware/authorization");
+const rateLimit = require("express-rate-limit");
+routers.use(rateLimit.rateLimit({
+    limit: 100,
+    windowMs: 10 * 60 * 1000,
+    message: "Too many request from this IP"
+}))
 routers.use("/v1/users/auth", usersV1Routes);
-routers.get("/v1/testing", authorization, (req, res) => {
-    res.send("End");
-});
 module.exports = routers;
