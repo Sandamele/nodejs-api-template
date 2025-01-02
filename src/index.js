@@ -17,8 +17,8 @@ const swaggerSpec = require("./config/swagger");
         console.error("Error synchronizing database:", error);
     }
     app.use(express.json());
+    
     // App routes here
-    // app.use(rateLimit)
     app.get("/", (req, res) => {
         res.send("Hello, World!");
     });
