@@ -57,9 +57,9 @@ By using this template, developers can avoid the need to recreate basic authenti
 GET /api/v1/docs: Access the Swagger UI for API documentation.
 
 ### User Management
-POST /api/v1/users/auth/register: Register a new user.
-POST /api/v1/users/auth/login: User login and JWT token issuance.
-POST /api/v1/users/auth/reset-password: Reset a user's password using a reset token.
-POST /api/v1/users/auth/otps: Request a one-time password (OTP) for additional security or verification.
-POST /api/v1/users/auth/forgot-password: Initiate the forgot password process.
-DELETE /api/v1/users/auth/delete-account: Delete a user's account.
+- POST /api/v1/users/auth/register: Register a new user.
+- POST /api/v1/users/auth/login: User login and JWT token issuance.
+- POST /api/v1/users/auth/reset-password: Reset a user's password using a reset token.
+- POST /api/v1/users/auth/otps: Request a one-time password (OTP) for additional security or verification.
+- POST /api/v1/users/auth/forgot-password: Initiate the forgot password process.
+- DELETE /api/v1/users/auth/delete-account: Delete a user's account.
