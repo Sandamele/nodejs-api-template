@@ -30,5 +30,62 @@ const Users = sequelize.define(
     },
     { timestamps: true },
 );
+const Otp = sequelize.define(
+    "otps",
+    {
+        id: {
+            type: DataTypes.UUID,
+            defaultValue: DataTypes.UUIDV4,
+            allowNull: false,
+            primaryKey: true,
+        },
+        userId: {
+            type: DataTypes.UUID,
+            allowNull: false,
+            references: {
+                model: Users,
+                key: "id",
+            },
+        },
+        token: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            unique: true,
+        },
+        used: {
+            type: DataTypes.BOOLEAN,
+            defaultValue: false,
+            allowNull: false,
+        },
+        expiryDate: {
+            type: DataTypes.DATE,
+            allowNull: false,
+        },
+    },
+    { timestamps: true },
+);
 
-module.exports = Users;
+const LoggedDeletedUsers = sequelize.define(
+    "loggedDeletedUsers",
+    {
+        id: {
+            type: DataTypes.UUID,
+            defaultValue: DataTypes.UUIDV4,
+            allowNull: false,
+            primaryKey: true,
+        },
+        email: {
+            type: DataTypes.STRING,
+            allowNull: false,
+            validate: {
+                isEmail: true,
+            },
+        },
+        username: {
+            type: DataTypes.STRING,
+            allowNull: false,
+        },
+    },
+    { timestamps: true },
+);
+module.exports = { Users, Otp, LoggedDeletedUsers };

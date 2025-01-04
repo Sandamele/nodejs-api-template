@@ -8,7 +8,7 @@ const swaggerSpec = require("./config/swagger");
 (async () => {
     // Initialise the database connection
     await connection();
-   
+
     // Sync the database and models
     try {
         await sequelize.sync({ force: false }); // force: true drops the table if it exists
@@ -17,7 +17,7 @@ const swaggerSpec = require("./config/swagger");
         console.error("Error synchronizing database:", error);
     }
     app.use(express.json());
-    
+
     // App routes here
     app.get("/", (req, res) => {
         res.send("Hello, World!");
