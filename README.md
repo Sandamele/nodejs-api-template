@@ -18,30 +18,32 @@ By using this template, developers can avoid the need to recreate basic authenti
 - Multer for file uploads
 
 ## Folder Structure
+
 ```
-├── api/
-│   └── v1/
-│       ├── users/
-│           ├── users.controllers.js
-│           ├── users.model.js
-│           └── users.routes.js
-├── config/
-│   ├── cloudinary.js
-│   ├── db.connection.js
-│   └── swagger.js
-├── documentation/
-│   └── user.docs.js
-├── middleware/
-│   ├── authorization.js
-│   ├── upload.js
-│   └── users.validation.js
-├── public/
-├── utils/
-│   ├── generateToken.js
-│   ├── sendEmail.js
-│   └── validationResponse.js
-├── index.js
-├── routes.js
+├── src/
+│   ├── api/
+│   │   └── v1/
+│   │       ├── users/
+│   │           ├── users.controllers.js
+│   │           ├── users.model.js
+│   │           └── users.routes.js
+│   ├── config/
+│   │   ├── cloudinary.js
+│   │   ├── db.connection.js
+│   │   └── swagger.js
+│   ├── documentation/
+│   │   └── user.docs.js
+│   ├── middleware/
+│   │   ├── authorization.js
+│   │   ├── upload.js
+│   │   └── users.validation.js
+│   ├── public/
+│   ├── utils/
+│   │   ├── generateToken.js
+│   │   ├── sendEmail.js
+│   │   └── validationResponse.js
+│   ├── index.js
+│   ├── routes.js
 ├── .env
 ├── .env.example
 ├── .gitignore
