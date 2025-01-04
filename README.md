@@ -54,7 +54,7 @@ By using this template, developers can avoid the need to recreate basic authenti
 ## API Routes
 
 ### Swagger Documentation
-GET /api/v1/docs: Access the Swagger UI for API documentation.
+- GET /api/v1/docs: Access the Swagger UI for API documentation.
 
 ### User Management
 - POST /api/v1/users/auth/register: Register a new user.
