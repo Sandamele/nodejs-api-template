@@ -18,6 +18,7 @@ By using this template, developers can avoid the need to recreate basic authenti
 - Multer for file uploads
 
 ## Folder Structure
+```
 ├── api/
 │   └── v1/
 │       ├── users/
@@ -48,6 +49,7 @@ By using this template, developers can avoid the need to recreate basic authenti
 ├── package-lock.json
 ├── package.json
 └── README.md
+```
 
 ## API Routes
 
