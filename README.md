@@ -63,4 +63,3 @@ POST /api/v1/users/auth/reset-password: Reset a user's password using a reset to
 POST /api/v1/users/auth/otps: Request a one-time password (OTP) for additional security or verification.
 POST /api/v1/users/auth/forgot-password: Initiate the forgot password process.
 DELETE /api/v1/users/auth/delete-account: Delete a user's account.
-
