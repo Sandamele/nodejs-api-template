@@ -5,7 +5,6 @@
     "main": "src/index.js",
     "scripts": {
         "develop": "nodemon src/index.js",
-        "start": "src/index.js",
         "format": "prettier --write ."
     },
     "repository": {
